@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
+  <listeners>
+    <listener class-name="com.uiautomation.listeners.Listener"/>
+  </listeners>
+  <test name="my hub spot test chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.uiautomation.Tests.verifyhoteltestEqualExperts">
+        <methods>
+          <include name="quit"/>
+          <include name="setUp"/>
+          <include name="TS01_VerifyHotelBookingFormWithValidCredentials" invocation-numbers="0"/>
+          <include name="takeSnapShot"/>
+        </methods>
+      </class> <!-- com.uiautomation.Tests.verifyhoteltestEqualExperts -->
+    </classes>
+  </test> <!-- my hub spot test chrome(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
